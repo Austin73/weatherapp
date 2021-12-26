@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { change_city, set_city } from '../actions'
 import '../styles/InputContainer.css'
@@ -8,7 +9,7 @@ import fetchCurrentData from '../apicall/fetchCurrentData';
 
 function InputContainer() {
 
-    const city = useSelector(state => state.city)
+    const [city, setcity] = useState("")
     const dispatch = useDispatch()
     
     const currentData = useSelector(state => state.currentData)
@@ -29,7 +30,7 @@ function InputContainer() {
                 autoFocus
                 value={city}
                 onChange={(e) => {
-                    dispatch(set_city(e.target.value))
+                    dispatch(setcity(e.target.value))
                 }}
 
             />

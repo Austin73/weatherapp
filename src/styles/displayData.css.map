@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,iBAAiB,CACjB;EACI,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,eAAe;EACvB,KAAK,EAAE,GAAG;EAEV,MAAM,EAAE,IAAI;EACZ,cAAc,EAAE,MAAM;CAqBzB;;AA5BD,AAWI,iBAXa,CAWb,OAAO,CAAA;EACH,UAAU,EAAE,MAAM;ECZtB,aAAa,EAAE,eAAe;CDc7B;;AAdL,AAiBI,iBAjBa,CAiBb,cAAc,CAAA;ECjBd,aAAa,EAAE,eAAe;EDoB1B,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,SAAS,EAAE,IAAI;EACf,YAAY,EAAE,GAAG;EAEjB,MAAM,EAAC,aACX;CAAC",
+    "sources": [
+        "displayData.scss",
+        "_mixins.scss"
+    ],
+    "names": [],
+    "file": "displayData.css"
+}

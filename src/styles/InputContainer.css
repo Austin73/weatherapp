@@ -5,7 +5,8 @@
 
 input {
   color: aqua;
-  margin: 1rem;
   font-size: 1rem;
+  text-align: center;
+  margin-left: 40%;
 }
 /*# sourceMappingURL=InputContainer.css.map */

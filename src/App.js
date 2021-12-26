@@ -5,7 +5,8 @@ import { applyMiddleware, createStore } from 'redux'
 import thunk from 'redux-thunk' ;
 import allReducers from './reducers';
 import { Provider } from 'react-redux';
-
+import CurrentDataContainer from './components/CurrentDataContainer';
+import Button from './components/Button';
 const store =createStore(allReducers,applyMiddleware(thunk))
 
 
@@ -17,7 +18,8 @@ function App() {
       
      
       <InputContainer/>
-      {/* <CurrentDataContainer/> */}
+      <Button/>
+      <CurrentDataContainer/>
     </div>
     </Provider>
   );

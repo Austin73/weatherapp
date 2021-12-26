@@ -1,0 +1,32 @@
+@import "mixins";
+
+.weatherContainer
+{
+    display: flex;
+    border: 1px solid black;
+    width: 50%;
+   
+    margin: auto;
+    flex-direction: column;
+   
+    
+    // Css rule for header
+    .header{
+        text-align: center;
+        @include borderBottom
+    }
+
+    //css rules for data part
+    .dataContainer{
+        
+        @include borderBottom;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-left: 15%;
+        // padding-right: 20%;
+        border:1px solid red
+    }
+
+}
+
