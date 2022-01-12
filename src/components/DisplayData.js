@@ -8,10 +8,20 @@ function DisplayData() {
 
     const currentData = useSelector(state => state.currentData)
     return (
+
+       <div>       
+           {
+               // To check if data is not loaded
+          JSON.stringify(currentData.currentData) === '{}'?"Loading":(
+              // if data is loaded show the data
         <div className='weatherContainer'>
             <div className='header'>
                 <b>Weather {currentData.currentData.name} </b>- Sunday Dec 26
             </div>
+          
+          
+          {/* data container starts here */}
+          
             <div className='dataContainer'>
                 <div style={{ flex: '1' }}>
                     <img src={cloudy} width='20%' />
@@ -41,6 +51,7 @@ function DisplayData() {
 
                 </div>
             </div>
+            
             <div className='otherInfo'>
                <div>
                    <img src={sunrise}/>&nbsp;
@@ -52,8 +63,8 @@ function DisplayData() {
                </div>
             </div>
 
-
-
+        </div>)
+}
         </div>
     )
 }
